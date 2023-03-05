@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+package fr.thibautmeyer.bookmanager;
+option java_package = "fr.thibautmeyer.bookmanager";
+option java_outer_classname = "BooksObj";
+
+message Books {
+  int32 id = 1;
+  string title = 2;
+  repeated Authors authors = 3;
+  bytes cover = 4;
+  string summary = 5;
+  Series series = 6;
+  int32 tome = 7;
+  Genres genre = 8;
+  string editor = 9;
+  int32 pages = 10;
+  string ISBN = 11;
+  google.protobuf.Timestamp publication_date = 12;
+}
+
+message Authors {
+  string first_name = 1;
+  string last_name = 2;
+}
+
+message Series {
+  string name = 1;
+}
+
+message Genres {
+  string name = 1;
+}

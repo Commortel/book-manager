@@ -1,4 +1,4 @@
-package fr.thibautmeyer.book_manger
+package fr.thibautmeyer.book_manager
 
 import io.flutter.embedding.android.FlutterActivity
 
